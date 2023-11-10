@@ -1,0 +1,16 @@
+.support {
+  margin-top: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  .contacts {
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: flex-start;
+    }
+  }
+}

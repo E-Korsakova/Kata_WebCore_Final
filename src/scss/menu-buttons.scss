@@ -1,0 +1,33 @@
+.menu-button {
+  width: 40px;
+  height: 40px;
+}
+
+.support-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.top-menu-button--burger-menu {
+  background-image: url('../img/icon_burger.svg');
+}
+
+.top-menu-button--burger-menu--open {
+  background-image: url('../img/icon_burger_open.svg');
+}
+
+.top-menu-button--search {
+  background-image: url('../img/icon_search.svg');
+}
+
+.support-button--call {
+  background-image: url('../img/icon_call.svg');
+}
+
+.support-button--chat {
+  background-image: url('../img/icon_chat.svg');
+}
+.support-button--profile {
+  background-image: url('../img/icon_profile.svg');
+}
