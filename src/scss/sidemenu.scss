@@ -1,20 +1,15 @@
 .sidemenu {
   width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 90px 1fr 240px;
   background-color: $color-main;
   align-items: stretch;
-  justify-content: space-between;
-  // position: absolute;
-}
 
-.sidemenu__top-container {
-  padding: 20px 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  @media (min-width: $tablet-size) {
+    width: 320px;
+    box-shadow: 0 0 55px $gray-dark;
+  }
 }
 
 .sidemenu__page-logo {
@@ -24,7 +19,7 @@
 
 .page-logo {
   &::after {
-    border-right: none;
+    display: none;
   }
 }
 
@@ -53,3 +48,7 @@
     }
   }
 }
+
+// .sidemenu--hide {
+//   display: none;
+// }

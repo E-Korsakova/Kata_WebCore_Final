@@ -1,9 +1,11 @@
-.support {
-  margin-top: auto;
+.sidemenu__support {
+  align-self: end;
   padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  justify-content: flex-end;
+  gap: 15px;
 
   .contacts {
     &-buttons {
@@ -13,4 +15,15 @@
       justify-content: flex-start;
     }
   }
+}
+
+.support__phone {
+  font-family: 'TT Lakes Bold';
+  font-size: $font-size--large;
+  margin: 0;
+  letter-spacing: -0.6px;
+}
+
+.lang-switch__link--current {
+  color: $gray-dark;
 }

@@ -1,12 +1,14 @@
 .sidemenu-nav__item {
   display: block;
   padding-left: 0;
-  color: $gray-darken;
 }
 
 .sidemenu-nav__item--curent {
-  color: $gray-dark;
   position: relative;
+
+  .sidemenu-nav__link {
+    color: $gray-dark;
+  }
 
   &::before {
     content: '';

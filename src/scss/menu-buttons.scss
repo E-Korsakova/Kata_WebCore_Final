@@ -9,14 +9,13 @@
   align-items: center;
 }
 
-.top-menu-button--burger-menu {
-  background-image: url('../img/icon_burger.svg');
-}
-
 .top-menu-button--burger-menu--open {
   background-image: url('../img/icon_burger_open.svg');
 }
 
+.top-menu-button--burger-menu {
+  background-image: url('../img/icon_burger.svg');
+}
 .top-menu-button--search {
   background-image: url('../img/icon_search.svg');
 }
@@ -28,6 +27,15 @@
 .support-button--chat {
   background-image: url('../img/icon_chat.svg');
 }
+
 .support-button--profile {
   background-image: url('../img/icon_profile.svg');
+}
+
+.page-header-button--repair {
+  background-image: url('../img/icon_repair.svg');
+}
+
+.page-header-button--checkstatus {
+  background-image: url('../img/icon_checkstatus.svg');
 }

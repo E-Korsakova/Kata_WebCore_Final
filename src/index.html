@@ -7,9 +7,9 @@
   </head>
   <body>
     <div class="sidemenu sidemenu--hide">
-      <div class="sidemenu__top-container">
+      <div class="top-container sidemenu__top-container">
         <button
-          class="button menu-button top-menu-button--burger-menu .top-menu-button--burger-menu--open"
+          class="button menu-button .top-menu-button--burger-menu--open"
         ></button>
         <div class="sidemenu__page-logo page-logo">
           <img src="img/logo.svg" alt="Логотип Компании CPS" />
@@ -19,28 +19,36 @@
       <nav class="nav sidemenu__nav">
         <ul class="list">
           <li class="nav__item sidemenu-nav__item">
-            <a href="#" class="text link">Ремонт техники</a>
+            <a href="#" class="text link sidemenu-nav__link">Ремонт техники</a>
           </li>
           <li class="nav__item sidemenu-nav__item sidemenu-nav__item--curent">
-            <a href="#" class="text link">Услуги и сервисы</a>
+            <a href="#" class="text link sidemenu-nav__link"
+              >Услуги и сервисы</a
+            >
           </li>
           <li class="nav__item sidemenu-nav__item">
-            <a href="#" class="text link">Корпоративным клиентам</a>
+            <a href="#" class="text link sidemenu-nav__link"
+              >Корпоративным клиентам</a
+            >
           </li>
           <li class="nav__item sidemenu-nav__item">
-            <a href="#" class="text link">Продавцам техники</a>
+            <a href="#" class="text link sidemenu-nav__link"
+              >Продавцам техники</a
+            >
           </li>
           <li class="nav__item sidemenu-nav__item">
-            <a href="#" class="text link">Партнерам</a>
+            <a href="#" class="text link sidemenu-nav__link">Партнерам</a>
           </li>
           <li class="nav__item sidemenu-nav__item">
-            <a href="#" class="text link">Производителям</a>
+            <a href="#" class="text link sidemenu-nav__link">Производителям</a>
           </li>
           <li class="nav__item sidemenu-nav__item">
-            <a href="#" class="text link">Наши сервисные центры</a>
+            <a href="#" class="text link sidemenu-nav__link"
+              >Наши сервисные центры</a
+            >
           </li>
           <li class="nav__item sidemenu-nav__item">
-            <a href="#" class="text link">Контакты</a>
+            <a href="#" class="text link sidemenu-nav__link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -63,5 +71,34 @@
         </div>
       </div>
     </div>
+    <main class="main-page">
+      <header class="top-container main-page__header main-page__header--hide">
+        <div class="header__wrapper">
+          <button
+            class="button menu-button top-menu-button--burger-menu"
+          ></button>
+          <div class="header__page-logo">
+            <img src="img/logo.svg" alt="Логотип Компании CPS" />
+          </div>
+        </div>
+        <div class="header__wrapper">
+          <div
+            class="support-buttons header__support-buttons header__support-buttons--hide"
+          >
+            <button class="button menu-button support-button--call"></button>
+            <button class="button menu-button support-button--chat"></button>
+            <button class="button menu-button support-button--profile"></button>
+          </div>
+          <div class="header__wrapper">
+            <button
+              class="button menu-button page-header-button--repair"
+            ></button>
+            <button
+              class="button menu-button page-header-button--checkstatus"
+            ></button>
+          </div>
+        </div>
+      </header>
+    </main>
   </body>
 </html>
