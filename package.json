@@ -1,41 +1,65 @@
 {
-  "name": "webcore-block-7",
+  "name": "web-last-block",
   "version": "1.0.0",
   "description": "WebCore last task",
+  "keywords": [
+    "web",
+    "scss",
+    "html",
+    "javascript",
+    "webpack"
+  ],
+  "license": "ISC",
+  "author": "Kata Academy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open",
+    "watch": "webpack --mode development --watch"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "not OperaMini All",
+    "not dead"
+  ],
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "autoprefixer": "9.6.1",
+    "babel-loader": "8.0.6",
+    "copy-webpack-plugin": "5.1.0",
+    "css-loader": "3.2.0",
+    "file-loader": "4.2.0",
+    "gh-pages": "2.1.1",
+    "html-webpack-plugin": "3.2.0",
+    "mini-css-extract-plugin": "0.8.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "3.0.0",
+    "sass-loader": "7.2.0",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.7",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": "~14.18.3",
+    "npm": "~6.14.15"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/E-Korsakova/Kata_WebCore_Final.git"
   },
-  "keywords": [
-    "webpack",
-    "WebCore"
-  ],
-  "author": "devilcat <evild3vilcat@gmail.com>",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/E-Korsakova/Kata_WebCore_Final/issues"
   },
-  "homepage": "https://github.com/E-Korsakova/Kata_WebCore_Final#readme",
-  "devDependencies": {
-    "@babel/core": "^7.23.3",
-    "@babel/preset-env": "^7.23.3",
-    "autoprefixer": "9.6.1",
-    "babel-loader": "^9.1.3",
-    "copy-webpack-plugin": "^11.0.0",
-    "css-loader": "^6.8.1",
-    "file-loader": "^6.2.0",
-    "gh-pages": "2.1.1",
-    "html-webpack-plugin": "^5.5.3",
-    "mini-css-extract-plugin": "^2.7.6",
-    "sass": "^1.69.5",
-    "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
-  }
+  "homepage": "https://github.com/E-Korsakova/Kata_WebCore_Final#readme"
 }
