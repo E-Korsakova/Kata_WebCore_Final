@@ -1,0 +1,29 @@
+.gradient {
+  width: 24px;
+  height: 40px;
+  position: fixed;
+  z-index: 2;
+}
+
+.gradient--left {
+  background-image: linear-gradient(
+    to left,
+    rgba(248, 248, 248, 0),
+    rgba(248, 248, 248, 1)
+  );
+  left: 0;
+}
+
+.gradient--right {
+  background-image: linear-gradient(
+    to right,
+    rgba(248, 248, 248, 0),
+    rgba(248, 248, 248, 1)
+  );
+  position: fixed;
+  right: 0;
+}
+
+.gradient--brands {
+  height: 80px;
+}

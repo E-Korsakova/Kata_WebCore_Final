@@ -1,0 +1,45 @@
+.main-page__nav {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 10px;
+  flex-wrap: nowrap;
+  overflow: auto;
+
+  @media (min-width: $desktop-size) {
+    flex-wrap: wrap;
+  }
+}
+
+.nav__link {
+  padding: 10px 20px;
+
+  &:focus {
+    border-color: $color-focus;
+    background-color: $color-main;
+  }
+}
+
+.nav__link--tablet {
+  @media (min-width: $tablet-size) {
+    display: block;
+  }
+}
+
+.nav__link--desktop {
+  @media (min-width: $desktop-size) {
+    display: block;
+  }
+}
+
+.nav__link--desktop + .nav__link--mobile {
+  @media (min-width: $desktop-size) {
+    display: none;
+  }
+}
+
+.break {
+  @media (min-width: $desktop-size) {
+    flex-basis: 100%;
+    display: block;
+  }
+}

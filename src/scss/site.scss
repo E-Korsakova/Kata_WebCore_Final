@@ -1,0 +1,7 @@
+.site {
+  @media (min-width: $desktop-size) {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    align-items: stretch;
+  }
+}

@@ -2,6 +2,10 @@
   background-color: $color-main;
   border-bottom: 1px solid $color-divider;
   justify-content: space-between;
+
+  @media (min-width: $desktop-size) {
+    display: none;
+  }
 }
 
 .header__wrapper {
@@ -33,11 +37,6 @@
 .header__support-buttons {
   padding-right: 20px;
   position: relative;
-
-  @media (min-width: $tablet-size) {
-    position: sticky;
-    right: -120px;
-  }
 }
 
 @media (min-width: $tablet-size) {
@@ -64,8 +63,4 @@
     right: 0;
     top: 5px;
   }
-}
-
-.header__support-buttons--hide {
-  display: none;
 }

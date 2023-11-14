@@ -1,3 +1,13 @@
 import '../scss/style.scss'
 
-console.log('Works!')
+import { btnBurgerOnClick } from './buttons'
+import { windowResize } from './window-resize'
+import { swiper } from './swiper'
+
+function init() {
+  btnBurgerOnClick()
+  windowResize()
+  window.addEventListener('DOMContentLoaded', swiper())
+}
+
+init()

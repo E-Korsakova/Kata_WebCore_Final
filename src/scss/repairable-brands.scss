@@ -1,0 +1,70 @@
+.repairable-brands {
+}
+
+.container {
+  height: auto;
+}
+
+.brand-card {
+  height: 70px;
+  width: 240px;
+  border: 1px solid $gray-light;
+  background-color: $color-main;
+  border-radius: 6px;
+  padding-left: 15px;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url(../img/icon_go.svg) no-repeat;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+  }
+}
+
+.brand {
+  display: block;
+}
+
+.brand__lenovo {
+  position: absolute;
+  top: 25%;
+}
+
+.brand__sumsung {
+  position: absolute;
+  top: 20%;
+}
+
+.brand__apple {
+  position: absolute;
+  top: 15%;
+}
+
+.brand__view-sonic {
+  position: absolute;
+  top: 30%;
+}
+
+.brand__bosch {
+  position: absolute;
+  top: 30%;
+}
+
+.brand__hp {
+  position: absolute;
+  top: 12%;
+}
+
+.brand__acer {
+  position: absolute;
+  top: 32%;
+}
+
+.brand__sony {
+  position: absolute;
+  top: 30%;
+}

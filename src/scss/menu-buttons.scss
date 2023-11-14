@@ -9,6 +9,15 @@
   align-items: center;
 }
 
+.content__support-buttons {
+  gap: 10px;
+}
+
+.button-text {
+  font-family: 'TT Lakes Medium';
+  font-size: $font-size--medium;
+}
+
 .top-menu-button--burger-menu--open {
   background-image: url('../img/icon_burger_open.svg');
 }

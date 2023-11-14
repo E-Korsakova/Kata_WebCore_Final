@@ -1,0 +1,9 @@
+.main-page {
+  opacity: 1;
+  @media (min-width: $desktop-size) {
+  }
+}
+
+.main-page--low-opacity {
+  opacity: 0.1;
+}

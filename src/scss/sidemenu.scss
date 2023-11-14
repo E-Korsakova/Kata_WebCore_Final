@@ -1,20 +1,38 @@
 .sidemenu {
+  transition-duration: 0.5s;
   width: 100%;
+  max-width: 360px;
   height: 100vh;
   display: grid;
-  grid-template-rows: 90px 1fr 240px;
+  grid-template-rows: 96px 1fr 240px;
   background-color: $color-main;
   align-items: stretch;
+  overflow-x: hidden;
+  box-shadow: 0 0 55px $gray-dark;
+  position: fixed;
+  z-index: 1;
 
   @media (min-width: $tablet-size) {
     width: 320px;
-    box-shadow: 0 0 55px $gray-dark;
+    height: 100%;
+  }
+
+  @media (min-width: $desktop-size) {
+    height: 100%;
+    transition: none;
+    box-shadow: none;
+    position: static;
+    overflow: visible;
   }
 }
 
 .sidemenu__page-logo {
-  margin-left: 15px;
+  margin-left: 20px;
   margin-right: auto;
+
+  @media (min-width: $desktop-size) {
+    margin-left: 0;
+  }
 }
 
 .page-logo {
@@ -49,6 +67,9 @@
   }
 }
 
-// .sidemenu--hide {
-//   display: none;
-// }
+.sidemenu--hide {
+  min-width: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: max-width 0.5s linear;
+}

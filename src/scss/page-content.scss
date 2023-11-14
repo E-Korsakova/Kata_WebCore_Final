@@ -1,0 +1,37 @@
+.content__header {
+  padding-left: 20px;
+  position: relative;
+
+  &::before {
+    content: '';
+    border-left: 8px solid $color-pointer;
+    height: 40px;
+    border-radius: 4px;
+    position: absolute;
+    left: -4px;
+    top: 18px;
+
+    @media (min-width: $desktop-size) {
+      top: 35px;
+    }
+  }
+}
+
+.content__support-buttons {
+  gap: 35px;
+
+  .header__wrapper {
+    gap: 10px;
+  }
+}
+
+.content__title {
+  font-family: 'TT Lakes Bold';
+  font-size: $font-size--title;
+  white-space: nowrap;
+  margin: 0;
+
+  @media (min-width: $desktop-size) {
+    margin-top: 0.67em;
+  }
+}

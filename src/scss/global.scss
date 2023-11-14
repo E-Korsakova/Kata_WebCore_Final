@@ -50,18 +50,35 @@ body {
   font-size: 16px;
   white-space: nowrap;
   letter-spacing: -0.2px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+
+  &:hover {
+    border-color: $color-focus;
+    background-color: $color-main;
+  }
 }
 
 .nav {
   padding: 15px;
 }
 
-.nav__item {
-  padding: 15px 0;
-}
-
 .list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.section__title {
+  font-size: $font-size--medium;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $gray-dark;
+  padding: 15px;
+  border-top: 1px solid $color-divider;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
 }
