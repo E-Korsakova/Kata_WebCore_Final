@@ -1,8 +1,3 @@
-// import Swiper from 'swiper'
-// import { Pagination } from 'swiper/modules'
-// import 'swiper/css'
-// import 'swiper/css/pagination'
-
 function swiper() {
   let swiperResize = function (breakpoint, swiperClass, swiperSettings) {
     let swiper = new Swiper(swiperClass, swiperSettings)
@@ -13,7 +8,7 @@ function swiper() {
       if (breakpoint.matches) {
         return swiper
       } else {
-        if (swiper !== undefined) swiper.destroy(true, true)
+        if (swiper !== undefined) swiper.destroy
         return
       }
     }

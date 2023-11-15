@@ -63,5 +63,7 @@
     "url": "https://github.com/E-Korsakova/Kata_WebCore_Final/issues"
   },
   "homepage": "https://github.com/E-Korsakova/Kata_WebCore_Final#readme",
-  "dependencies": {}
+  "dependencies": {
+    "swiper": "^11.0.4"
+  }
 }
