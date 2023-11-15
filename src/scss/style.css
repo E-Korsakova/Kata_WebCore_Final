@@ -396,11 +396,11 @@ a:focus {
 
 .expand--open {
   transform: rotate(180deg);
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 
 .expand {
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 
 @media (min-width: 320px) {

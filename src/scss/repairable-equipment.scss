@@ -1,0 +1,38 @@
+.repairable-equipment {
+  @media (min-width: $tablet-size) {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+}
+
+.equipment-card {
+  display: block;
+  box-sizing: border-box;
+  height: 160px;
+  width: 240px;
+  border: 1px solid $gray-light;
+  background-color: $color-main;
+  border-radius: 6px;
+  padding: 15px;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url(../img/icon_go.svg) no-repeat;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  @media (min-width: $tablet-size) {
+    width: 224px;
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 240px;
+  }
+}

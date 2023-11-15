@@ -1,17 +1,27 @@
 .repairable-brands {
+  @media (min-width: $tablet-size) {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
 }
 
 .container {
   height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .brand-card {
+  display: block;
+  box-sizing: border-box;
   height: 70px;
   width: 240px;
   border: 1px solid $gray-light;
   background-color: $color-main;
   border-radius: 6px;
-  padding-left: 15px;
   position: relative;
 
   &::after {
@@ -23,48 +33,49 @@
     right: 15px;
     top: 14px;
   }
+
+  @media (min-width: $tablet-size) {
+    width: 224px;
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 240px;
+  }
 }
 
 .brand {
-  display: block;
+  padding-left: 15px;
+  position: absolute;
 }
 
-.brand__lenovo {
-  position: absolute;
+.brand--lenovo {
   top: 25%;
 }
 
-.brand__sumsung {
-  position: absolute;
+.brand--sumsung {
   top: 20%;
 }
 
-.brand__apple {
-  position: absolute;
+.brand--apple {
   top: 15%;
 }
 
-.brand__view-sonic {
-  position: absolute;
+.brand--view-sonic {
   top: 30%;
 }
 
-.brand__bosch {
-  position: absolute;
+.brand--bosch {
   top: 30%;
 }
 
-.brand__hp {
-  position: absolute;
+.brand--hp {
   top: 12%;
 }
 
-.brand__acer {
-  position: absolute;
+.brand--acer {
   top: 32%;
 }
 
-.brand__sony {
-  position: absolute;
+.brand--sony {
   top: 30%;
 }

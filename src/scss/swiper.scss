@@ -1,26 +1,32 @@
+.repairable-brands__swiper {
+  min-width: 320px;
+  position: relative;
+
+  @media (min-width: $tablet-size) {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .swiper-pagination-bullet-active {
   background: $gray-dark;
 }
 
 .swiper-pagination {
   position: static;
-  height: 15px;
   margin-top: 15px;
   --swiper-pagination-bullet-size: 12px;
+
+  @media (min-width: $tablet-size) {
+    display: none;
+  }
 }
 
-.repairable-brands__swiper {
-  width: 320px;
-  //height: 70px;
+.swiper-wrapper {
+  padding-left: 15px;
 }
 
-// .swiper-wrapper {
-//   position: relative;
-//   width: 100%;
-//   height: 100%;
-// }
-
-// .swiper__slide {
-//   width: 240px;
-//   height: 70px;
-// }
+.swiper-wrapper--open {
+  max-height: auto;
+  transition: max-height 0.5s linear;
+}

@@ -1,8 +1,8 @@
 .gradient {
   width: 24px;
   height: 40px;
-  position: fixed;
-  z-index: 2;
+  position: absolute;
+  z-index: 5;
 }
 
 .gradient--left {
@@ -20,10 +20,13 @@
     rgba(248, 248, 248, 0),
     rgba(248, 248, 248, 1)
   );
-  position: fixed;
   right: 0;
 }
 
 .gradient--brands {
   height: 80px;
+}
+
+.gradient--equipment {
+  height: 170px;
 }

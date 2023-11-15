@@ -1,9 +1,20 @@
 .main-page {
   opacity: 1;
-  @media (min-width: $desktop-size) {
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .main-page--low-opacity {
   opacity: 0.1;
+}
+
+.buttons--show-all {
+  display: none;
+
+  @media (min-width: $tablet-size) {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
 }

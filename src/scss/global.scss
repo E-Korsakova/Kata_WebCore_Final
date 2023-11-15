@@ -30,7 +30,7 @@ body {
 }
 
 .top-container {
-  padding: 20px 15px;
+  padding: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -70,6 +70,7 @@ body {
 }
 
 .section__title {
+  align-self: stretch;
   font-size: $font-size--medium;
   font-weight: normal;
   text-transform: uppercase;

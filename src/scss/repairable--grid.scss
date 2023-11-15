@@ -1,0 +1,66 @@
+.repairable-wrapper {
+  @media (min-width: $tablet-size) {
+    display: grid;
+    grid-template-columns: repeat(3, 224px);
+    row-gap: 15px;
+    column-gap: 20px;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop-size) {
+    grid-template-columns: repeat(4, 240px);
+    column-gap: 30px;
+    padding-left: 15px;
+    justify-content: center;
+  }
+}
+
+.brands__wrapper {
+  transition-duration: 0.5s;
+  max-height: 160px;
+}
+
+.equipment__wrapper {
+  transition-duration: 0.5s;
+  max-height: 165px;
+}
+
+.buttons--show-all {
+  @media (min-width: $tablet-size) {
+    margin-right: 565px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-right: 880px;
+  }
+}
+
+.expand--open {
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
+.expand {
+  transition-duration: 0.5s;
+}
+
+.repairable-brands__swiper {
+  .cards-wrapper--show-all {
+    max-height: 330px;
+
+    @media (min-width: $desktop-size) {
+      max-height: 280px;
+    }
+  }
+}
+
+.repairable-equipment__swiper {
+  .cards-wrapper--show-all {
+    max-height: 350px;
+  }
+}
+
+.cards-wrapper--show-all {
+  transition: max-height 0.5s linear;
+}
