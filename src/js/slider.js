@@ -20,7 +20,7 @@ function swiper() {
   swiperResize('(max-width: 374px)', '.swiper', {
     loop: true,
     spaceBetween: 15,
-    slidesPerView: 1.25,
+    slidesPerView: 1.2,
     pagination: {
       el: '.swiper-pagination',
       clickable: true

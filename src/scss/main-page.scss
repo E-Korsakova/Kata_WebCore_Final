@@ -9,6 +9,11 @@
   opacity: 0.1;
 }
 
+.equipment__wrapper {
+  transition-duration: 0.5s;
+  max-height: 165px;
+}
+
 .buttons--show-all {
   display: none;
 
@@ -16,5 +21,46 @@
     display: flex;
     gap: 5px;
     align-items: center;
+    padding-right: 15px;
+    border: 2px solid transparent;
+    margin-right: 565px;
   }
+
+  @media (min-width: $desktop-size) {
+    margin-right: 880px;
+  }
+}
+
+.expand--open {
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
+.expand {
+  transition-duration: 0.5s;
+}
+
+.repairable-brands__swiper {
+  .cards-wrapper--show-all {
+    max-height: 330px;
+
+    @media (min-width: $desktop-size) {
+      max-height: 280px;
+    }
+  }
+}
+
+.repairable-equipment__swiper {
+  .cards-wrapper--show-all {
+    max-height: 350px;
+  }
+}
+
+.brands__wrapper {
+  transition-duration: 0.5s;
+  max-height: 160px;
+}
+
+.cards-wrapper--show-all {
+  transition: max-height 0.5s linear;
 }

@@ -1,0 +1,76 @@
+.price-card {
+  box-sizing: border-box;
+  width: 260px;
+  height: 200px;
+  padding: 15px;
+  padding-bottom: 20px;
+  background-color: $color-main;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 120px;
+    height: 32px;
+    background: no-repeat url('../img/icon_order.svg');
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  &:first-child {
+    justify-self: start;
+  }
+}
+
+.header--cell {
+  font-family: 'TT Lakes Medium';
+  color: $gray-dark;
+  letter-spacing: 0;
+}
+
+.span-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 220px;
+}
+
+.cell {
+  word-wrap: break-word;
+  white-space: normal;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+}
+
+.price__specification {
+  padding: 15px;
+  padding-top: 0;
+  gap: 10px;
+}
+
+.specification-text {
+  letter-spacing: 0.2px;
+  line-height: 20px;
+}
+
+.link--get-offer {
+  letter-spacing: -0.2px;
+  word-wrap: break-word;
+  white-space: normal;
+  padding-right: 25px;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 24px;
+    height: 27px;
+    background: no-repeat url('../img/icon_arrow.svg');
+    position: absolute;
+    right: 0;
+    bottom: -2.5px;
+  }
+}
