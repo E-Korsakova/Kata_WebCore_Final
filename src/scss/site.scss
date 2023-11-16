@@ -1,7 +1,7 @@
 .site {
   @media (min-width: $desktop-size) {
     display: grid;
-    grid-template-columns: 320px 1fr;
+    grid-template-columns: 320px calc(100vw - 340px);
     align-items: stretch;
   }
 }
