@@ -86,6 +86,85 @@
           </div>
         </div>
       </div>
+      <div class="form form__request-call form--hide">
+        <form action="#">
+          <input
+            type="button"
+            class="button form-button--close"
+            style="background-image: url(img/icon_burger_open.svg)"
+          />
+          <h2 class="content__title form__title">Заказать звонок</h2>
+          <input
+            type="text"
+            class="input-text"
+            id="phone"
+            name="phone"
+            placeholder="Телефон"
+          />
+          <p class="text form-text"
+            >Нажимая “отправить”, вы даете согласие на
+            <a class="link form__link">обработку персональных данных</a> и
+            соглашаетесь с нашей
+            <a class="link form__link">политикой конфиденциальности</a></p
+          >
+
+          <input
+            type="button"
+            class="button form-button--send"
+            style="background-image: url(img/icon_send.svg)"
+          />
+        </form>
+      </div>
+      <div class="form form__feedback form--hide">
+        <form action="#">
+          <input
+            type="button"
+            class="button form-button--close"
+            style="background-image: url(img/icon_burger_open.svg)"
+          />
+          <h2 class="content__title form__title">Обратная связь</h2>
+          <input
+            type="text"
+            class="input-text"
+            id="fname"
+            name="firstname"
+            placeholder="Имя"
+          />
+          <input
+            type="text"
+            class="input-text"
+            id="phone"
+            name="phone"
+            placeholder="Телефон"
+          />
+          <input
+            type="text"
+            class="input-text"
+            id="email"
+            name="email"
+            placeholder="Электронная почта"
+          />
+          <textarea
+            class="input-text"
+            id="message"
+            name="message"
+            placeholder="Сообщение"
+          ></textarea>
+
+          <p class="text form-text"
+            >Нажимая “отправить”, вы даете согласие на
+            <a class="link form__link">обработку персональных данных</a> и
+            соглашаетесь с нашей
+            <a class="link form__link">политикой конфиденциальности</a></p
+          >
+
+          <input
+            type="button"
+            class="button form-button--send"
+            style="background-image: url(img/icon_send.svg)"
+          />
+        </form>
+      </div>
       <main class="main-page">
         <header class="top-container main-page__header hidden">
           <div class="header__wrapper">
@@ -117,13 +196,13 @@
         <div class="top-container content__header">
           <h1 class="text content__title">Услуги и сервисы</h1>
           <div class="support-buttons content__support-buttons hidden">
-            <label class="header__wrapper">
+            <label class="header__wrapper header__wrapper--repair">
               <span class="text button-text">Оставить заявку</span>
               <button
                 class="button menu-button page-header-button--repair"
               ></button>
             </label>
-            <label class="header__wrapper">
+            <label class="header__wrapper header__wrapper--checkstatus">
               <span class="text button-text">Статус ремонта</span>
               <button
                 class="button menu-button page-header-button--checkstatus"
@@ -348,99 +427,151 @@
           <div class="gradient gradient--right gradient--price"></div>
           <div class="container swiper price__swiper">
             <div class="swiper-wrapper price__wrapper">
-              <div hidden class="price__header">
+              <div class="price__header price--row hidden">
                 <span class="text header--cell">Ремонтные услуги</span>
                 <span class="text header--cell">Цена</span>
                 <span class="text header--cell">Срок</span>
+                <div class="empty-cell"></div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide price--row">
                 <a class="link price-card" href="#">
                   <span class="span-wrapper">
-                    <span class="text header--cell">Ремонтные услуги</span>
+                    <span class="text header--cell card-header"
+                      >Ремонтные услуги</span
+                    >
                     <span class="text cell service-cell">Диагностика</span>
                   </span>
                   <span class="span-wrapper">
-                    <span class="text header--cell">Цена</span>
+                    <span class="text header--cell card-header">Цена</span>
                     <span class="text cell price-cell">Бесплатно</span>
                   </span>
                   <span class="span-wrapper">
-                    <span class="text header--cell">Срок</span>
+                    <span class="text header--cell card-header">Срок</span>
                     <span class="text cell deadline-cell">30-120 мин</span>
                   </span>
                 </a>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide price--row">
                 <a class="link price-card" href="#">
                   <span class="span-wrapper">
-                    <span class="text header--cell">Ремонтные услуги</span>
+                    <span class="text header--cell card-header"
+                      >Ремонтные услуги</span
+                    >
                     <span class="text cell service-cell">Замена дисплея</span>
                   </span>
                   <span class="span-wrapper">
-                    <span class="text header--cell">Цена</span>
+                    <span class="text header--cell card-header">Цена</span>
                     <span class="text cell price-cell">1000</span>
                   </span>
                   <span class="span-wrapper">
-                    <span class="text header--cell">Срок</span>
+                    <span class="text header--cell card-header">Срок</span>
                     <span class="text cell deadline-cell">30-120 мин</span>
                   </span>
                 </a>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide price--row">
                 <a class="link price-card" href="#">
                   <span class="span-wrapper">
-                    <span class="text header--cell">Ремонтные услуги</span>
+                    <span class="text header--cell card-header"
+                      >Ремонтные услуги</span
+                    >
                     <span class="text cell service-cell"
                       >Замена полифонического динамика</span
                     >
                   </span>
                   <span class="span-wrapper">
-                    <span class="text header--cell">Цена</span>
+                    <span class="text header--cell card-header">Цена</span>
                     <span class="text cell price-cell">1000</span>
                   </span>
                   <span class="span-wrapper">
-                    <span class="text header--cell">Срок</span>
+                    <span class="text header--cell card-header">Срок</span>
                     <span class="text cell deadline-cell">30-120 мин</span>
                   </span>
                 </a>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide price--row">
                 <a class="link price-card" href="#">
                   <span class="span-wrapper">
-                    <span class="text header--cell">Ремонтные услуги</span>
+                    <span class="text header--cell card-header"
+                      >Ремонтные услуги</span
+                    >
                     <span class="text cell service-cell"
                       >Тестирование с выдачей технического заключения</span
                     >
                   </span>
                   <span class="span-wrapper">
-                    <span class="text header--cell">Цена</span>
+                    <span class="text header--cell card-header">Цена</span>
                     <span class="text cell price-cell">1000</span>
                   </span>
                   <span class="span-wrapper">
-                    <span class="text header--cell">Срок</span>
+                    <span class="text header--cell card-header">Срок</span>
                     <span class="text cell deadline-cell">30-120 мин</span>
                   </span>
                 </a>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide price--row">
                 <a class="link price-card" href="#">
                   <span class="span-wrapper">
-                    <span class="text header--cell">Ремонтные услуги</span>
+                    <span class="text header--cell card-header"
+                      >Ремонтные услуги</span
+                    >
                     <span class="text cell service-cell"
                       >Замена программного обеспечения</span
                     >
                   </span>
                   <span class="span-wrapper">
-                    <span class="text header--cell">Цена</span>
+                    <span class="text header--cell card-header">Цена</span>
                     <span class="text cell price-cell">1000</span>
                   </span>
                   <span class="span-wrapper">
-                    <span class="text header--cell">Срок</span>
+                    <span class="text header--cell card-header">Срок</span>
                     <span class="text cell deadline-cell">30-120 мин</span>
                   </span>
                 </a>
               </div>
             </div>
             <div class="swiper-pagination"></div>
+          </div>
+          <div class="grid__header hidden">
+            <div class="text price__header first-column--cell"
+              >Ремонтные услуги</div
+            >
+            <div class="text price__header header--price">Цена</div>
+            <div class="text price__header">Срок</div>
+            <div class="header--empty-cell"></div>
+          </div>
+          <div class="price--grid hidden">
+            <div class="text cell service-cell first-column--cell"
+              >Диагностика</div
+            >
+            <div class="text cell price-cell">Бесплатно</div>
+            <div class="text cell deadline-cell">30-120 мин</div>
+            <button class="cell button button--order"></button>
+            <div class="text cell service-cell first-column--cell"
+              >Замена дисплея</div
+            >
+            <div class="text cell price-cell">1000</div>
+            <div class="text cell deadline-cell">30-120 мин</div>
+            <button class="cell button button--order"></button>
+            <div class="text cell service-cell first-column--cell"
+              >Замена полифонического динамика</div
+            >
+            <div class="text cell price-cell">1000</div>
+            <div class="text cell deadline-cell">30-120 мин</div>
+            <button class="cell button button--order"></button>
+            <div class="text cell service-cell first-column--cell"
+              >Тестирование с выдачей технического заключения</div
+            >
+            <div class="text cell price-cell">1000</div>
+            <div class="text cell deadline-cell">30-120 мин</div>
+            <button class="cell button button--order"></button>
+            <div
+              class="text cell service-cell first-column--cell last-row--cell"
+              >Замена программного обеспечения</div
+            >
+            <div class="text cell price-cell last-row--cell">1000</div>
+            <div class="text cell deadline-cell last-row--cell">30-120 мин</div>
+            <button class="cell button button--order last-row--cell"></button>
           </div>
           <div class="price__specification">
             <p class="text specification-text">

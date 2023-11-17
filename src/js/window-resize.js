@@ -1,5 +1,6 @@
+import { deletePriceSwiper } from './price--grid'
+
 function windowResize() {
-  const mobileWidth = 320
   const tabletWidth = 768
   const desktopeWidth = 1360
   let currentWidth = document.body.clientWidth
@@ -19,6 +20,7 @@ function windowResize() {
       supportBtnDesktop.classList.remove('hidden')
       mainPage.classList.remove('main-page--low-opacity')
       mainPageHeader.classList.add('hidden')
+      deletePriceSwiper()
     } else {
       let sidemenuHide = document.querySelector('.sidemenu--hide')
 
@@ -30,6 +32,7 @@ function windowResize() {
 
       if (currentWidth >= tabletWidth) {
         mainPageSupportBtns.classList.remove('hidden')
+        deletePriceSwiper()
       } else {
         mainPageSupportBtns.classList.add('hidden')
       }

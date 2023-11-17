@@ -19,6 +19,10 @@
     position: absolute;
     right: 15px;
     bottom: 15px;
+
+    @media (min-width: $tablet-size) {
+      display: none;
+    }
   }
 
   &:first-child {
@@ -50,6 +54,10 @@
   padding: 15px;
   padding-top: 0;
   gap: 10px;
+
+  @media (min-width: $desktop-size) {
+    padding: 15px 25px;
+  }
 }
 
 .specification-text {

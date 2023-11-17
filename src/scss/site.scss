@@ -1,7 +1,12 @@
 .site {
+  opacity: 1;
   @media (min-width: $desktop-size) {
     display: grid;
     grid-template-columns: 320px calc(100vw - 340px);
     align-items: stretch;
   }
+}
+
+.site--low-opacity {
+  opacity: 0.1;
 }

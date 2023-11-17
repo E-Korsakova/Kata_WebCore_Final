@@ -27,6 +27,4 @@ function btnBurgerOnClick() {
   })
 }
 
-function btnShowAll() {}
-
 export { btnBurgerOnClick }

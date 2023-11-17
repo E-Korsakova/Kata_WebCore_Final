@@ -1,0 +1,90 @@
+.grid__header {
+  @media (min-width: $tablet-size) {
+    padding-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 1050;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.price--grid {
+  @media (min-width: $tablet-size) {
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: $color-main;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    grid-template-rows: repeat(5, 65px);
+  }
+
+  @media (min-width: $desktop-size) {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.price__header {
+  @media (min-width: $tablet-size) {
+    color: $gray-dark;
+    height: 40px;
+  }
+}
+
+.first-column--cell {
+  @media (min-width: $tablet-size) {
+    margin-left: 15px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-left: 25px;
+  }
+}
+
+.cell {
+  @media (min-width: $tablet-size) {
+    line-height: 65px;
+    vertical-align: middle;
+    border-bottom: 1px solid $gray-light;
+  }
+}
+
+.button--order {
+  @media (min-width: $tablet-size) {
+    justify-self: end;
+    margin-right: 15px;
+    height: 65px;
+    width: 100%;
+    background: url('../img/icon_order.svg') no-repeat 100% 50%;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-right: 25px;
+  }
+}
+
+.last-row--cell {
+  @media (min-width: $tablet-size) {
+    border-bottom: none;
+  }
+}
+
+.header--price,
+.price-cell {
+  @media (min-width: $tablet-size) {
+    padding-left: 15px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-left: 0;
+  }
+}

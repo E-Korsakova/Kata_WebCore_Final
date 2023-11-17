@@ -3,6 +3,10 @@
   height: 40px;
   position: absolute;
   z-index: 5;
+
+  @media (min-width: $tablet-size) {
+    display: none;
+  }
 }
 
 .gradient--left {
