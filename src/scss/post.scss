@@ -4,12 +4,17 @@
   }
 
   @media (min-width: $desktop-size) {
+    max-width: 1056px;
     padding-top: 0;
+    padding: 15px 25px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .post__content {
   @media (min-width: $tablet-size) {
+    padding: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
@@ -27,6 +32,11 @@
   overflow: hidden;
 
   @media (min-width: $tablet-size) {
+    max-height: 160px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-size) {
     max-height: 160px;
     padding: 0;
   }
