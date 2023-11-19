@@ -7,18 +7,46 @@ function formBth() {
   const requestCall = document.querySelector('.form__request-call')
 
   let callBth = null
+  let callBtnSidemenu = null
   let chatBtn = null
+  let chatBtnSidemenu = null
   let closeBth = null
+
   const mainPage = document.querySelector('.main-page')
   const sidemenu = document.querySelector('.sidemenu')
 
   if (currentwidth < tabletSize || currentwidth >= desktopSize) {
     callBth = document.querySelector('.sidemenu .support-button--call')
     chatBtn = document.querySelector('.sidemenu .support-button--chat')
-  }
-  if (currentwidth >= tabletSize && currentwidth < desktopSize) {
+    callBthListener()
+  } else {
     callBth = document.querySelector('.main-page .support-button--call')
     chatBtn = document.querySelector('.main-page .support-button--chat')
+    callBtnSidemenu = document.querySelector('.sidemenu .support-button--call')
+    chatBtnSidemenu = document.querySelector('.sidemenu .support-button--chat')
+    callBthListener()
+    callBtnSidemenu.addEventListener('click', () => {
+      isOpen = true
+      sidemenu.classList.add('sidemenu--hide')
+      classToggle(requestCall)
+
+      closeBth.addEventListener('click', () => {
+        isOpen = false
+        sidemenu.classList.remove('sidemenu--hide')
+        classToggle(requestCall)
+      })
+    })
+    chatBtnSidemenu.addEventListener('click', () => {
+      isOpen = true
+      sidemenu.classList.add('sidemenu--hide')
+      classToggle(feedback)
+
+      closeBth.addEventListener('click', () => {
+        isOpen = false
+        sidemenu.classList.remove('sidemenu--hide')
+        classToggle(feedback)
+      })
+    })
   }
 
   function classToggle(form) {
@@ -27,25 +55,34 @@ function formBth() {
     closeBth = form.querySelector('.form-button--close')
 
     if (currentwidth >= tabletSize) {
-      mainPage.classList.toggle('main-page--low-opacity')
-      sidemenu.classList.toggle('sidemenu--low-opacity')
+      if (isOpen) {
+        mainPage.classList.add('main-page--low-opacity')
+      } else {
+        mainPage.classList.remove('main-page--low-opacity')
+      }
     }
   }
 
-  callBth.addEventListener('click', () => {
-    classToggle(requestCall)
-
-    closeBth.addEventListener('click', () => {
+  function callBthListener() {
+    callBth.addEventListener('click', () => {
+      isOpen = true
       classToggle(requestCall)
-    })
-  })
-  chatBtn.addEventListener('click', () => {
-    classToggle(feedback)
 
-    closeBth.addEventListener('click', () => {
-      classToggle(feedback)
+      closeBth.addEventListener('click', () => {
+        isOpen = false
+        classToggle(requestCall)
+      })
     })
-  })
+    chatBtn.addEventListener('click', () => {
+      isOpen = true
+      classToggle(feedback)
+
+      closeBth.addEventListener('click', () => {
+        isOpen = false
+        classToggle(feedback)
+      })
+    })
+  }
 }
 
 export { formBth }

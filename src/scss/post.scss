@@ -2,21 +2,13 @@
   @media (min-width: $tablet-size) {
     padding: 15px;
   }
-
-  @media (min-width: $desktop-size) {
-    max-width: 1056px;
-    padding-top: 0;
-    padding: 15px 25px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 .post__content {
   @media (min-width: $tablet-size) {
     padding: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     align-items: start;
     gap: 10px;
   }
@@ -27,6 +19,8 @@
 }
 
 .post__article {
+  transition-duration: 0.5s;
+  margin-bottom: 10px;
   padding: 15px;
   max-height: 90px;
   overflow: hidden;
@@ -35,18 +29,16 @@
     max-height: 160px;
     padding: 0;
   }
-
-  @media (min-width: $desktop-size) {
-    max-height: 160px;
-    padding: 0;
-  }
 }
 
-.post__nav {
+.post__article--read-all {
+  max-height: 500px;
+  transition: max-height 0.5s linear;
+}
+
+.article__button {
+  margin-bottom: 10px;
   padding-left: 0;
-}
-
-.post__link--read-more {
   width: 150px;
   display: flex;
   gap: 5px;

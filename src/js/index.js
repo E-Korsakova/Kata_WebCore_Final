@@ -10,8 +10,8 @@ function init() {
   btnBurgerOnClick()
   formBth()
   btnShowAll()
-  windowResize()
   window.addEventListener('DOMContentLoaded', swiper())
+  windowResize()
 }
 
 init()

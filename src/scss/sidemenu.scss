@@ -1,7 +1,7 @@
 .sidemenu {
   transition-duration: 0.5s;
   width: 100%;
-  max-width: 360px;
+  max-width: 747px;
   height: 100vh;
   display: grid;
   grid-template-rows: 96px 1fr 240px;
@@ -10,7 +10,7 @@
   overflow-x: hidden;
   box-shadow: 0 0 55px $gray-dark;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
 
   @media (min-width: $tablet-size) {
     width: 320px;

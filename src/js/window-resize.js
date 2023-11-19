@@ -12,6 +12,8 @@ function windowResize() {
   const burgerMenuBth = document.querySelector(
     '.top-menu-button--burger-menu--open'
   )
+  const priceSwiper = document.querySelector('.price__swiper')
+  const priceGrid = document.querySelector('.price-grid')
 
   function isDesktop() {
     if (currentWidth >= desktopeWidth) {
@@ -32,9 +34,13 @@ function windowResize() {
 
       if (currentWidth >= tabletWidth) {
         mainPageSupportBtns.classList.remove('hidden')
+        priceSwiper.classList.add('hidden')
+        priceGrid.classList.remove('hidden')
         deletePriceSwiper()
       } else {
         mainPageSupportBtns.classList.add('hidden')
+        priceSwiper.classList.remove('hidden')
+        priceGrid.classList.add('hidden')
       }
 
       supportBtnDesktop.classList.add('hidden')

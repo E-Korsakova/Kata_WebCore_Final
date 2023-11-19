@@ -19,7 +19,7 @@ function btnBurgerOnClick() {
       isOpen = true
     } else if (
       isOpen &&
-      (evt.target === sidemenuBtnBurger || !sidemenu.contains(evt.target))
+      (evt.target === sidemenuBtnBurger || mainPage.contains(evt.target))
     ) {
       classToggle()
       isOpen = false

@@ -123,33 +123,35 @@
             style="background-image: url(img/icon_burger_open.svg)"
           />
           <h2 class="content__title form__title">Обратная связь</h2>
-          <input
-            type="text"
-            class="input-text"
-            id="fname"
-            name="firstname"
-            placeholder="Имя"
-          />
-          <input
-            type="text"
-            class="input-text"
-            id="phone"
-            name="phone"
-            placeholder="Телефон"
-          />
-          <input
-            type="text"
-            class="input-text"
-            id="email"
-            name="email"
-            placeholder="Электронная почта"
-          />
-          <textarea
-            class="input-text"
-            id="message"
-            name="message"
-            placeholder="Сообщение"
-          ></textarea>
+          <div class="form__inputs">
+            <input
+              type="text"
+              class="input-text"
+              id="fname"
+              name="firstname"
+              placeholder="Имя"
+            />
+            <input
+              type="text"
+              class="input-text"
+              id="phone"
+              name="phone"
+              placeholder="Телефон"
+            />
+            <input
+              type="text"
+              class="input-text"
+              id="email"
+              name="email"
+              placeholder="Электронная почта"
+            />
+            <textarea
+              class="input-text"
+              id="message"
+              name="message"
+              placeholder="Сообщение"
+            ></textarea>
+          </div>
 
           <p class="text form-text"
             >Нажимая “отправить”, вы даете согласие на
@@ -252,13 +254,19 @@
                   рекомендациям и, в свою очередь, советуют нас родным и
                   близким.
                 </p>
+                <p
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere eaque accusamus earum nemo tempore veritatis alias
+                  atque ullam! Tenetur laborum asperiores fuga ullam blanditiis.
+                  Suscipit a quisquam similique vel quas!</p
+                >
               </div>
-              <nav class="nav post__nav">
-                <a href="#" class="text link post__link--read-more">
-                  <img src="img/expand.svg" alt="" />
-                  <span>Читать далее</span>
-                </a>
-              </nav>
+              <button
+                class="text link button buttons--show-all article__button"
+              >
+                <img class="expand" src="img/expand.svg" alt="" />
+                <span class="section-button--read-more"> Читать далее</span>
+              </button>
             </div>
             <div class="post__image">
               <img
@@ -532,46 +540,50 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
-          <div class="grid__header hidden">
-            <div class="text price__header first-column--cell"
-              >Ремонтные услуги</div
-            >
-            <div class="text price__header header--price">Цена</div>
-            <div class="text price__header">Срок</div>
-            <div class="header--empty-cell"></div>
-          </div>
-          <div class="price--grid hidden">
-            <div class="text cell service-cell first-column--cell"
-              >Диагностика</div
-            >
-            <div class="text cell price-cell">Бесплатно</div>
-            <div class="text cell deadline-cell">30-120 мин</div>
-            <button class="cell button button--order"></button>
-            <div class="text cell service-cell first-column--cell"
-              >Замена дисплея</div
-            >
-            <div class="text cell price-cell">1000</div>
-            <div class="text cell deadline-cell">30-120 мин</div>
-            <button class="cell button button--order"></button>
-            <div class="text cell service-cell first-column--cell"
-              >Замена полифонического динамика</div
-            >
-            <div class="text cell price-cell">1000</div>
-            <div class="text cell deadline-cell">30-120 мин</div>
-            <button class="cell button button--order"></button>
-            <div class="text cell service-cell first-column--cell"
-              >Тестирование с выдачей технического заключения</div
-            >
-            <div class="text cell price-cell">1000</div>
-            <div class="text cell deadline-cell">30-120 мин</div>
-            <button class="cell button button--order"></button>
-            <div
-              class="text cell service-cell first-column--cell last-row--cell"
-              >Замена программного обеспечения</div
-            >
-            <div class="text cell price-cell last-row--cell">1000</div>
-            <div class="text cell deadline-cell last-row--cell">30-120 мин</div>
-            <button class="cell button button--order last-row--cell"></button>
+          <div class="price-grid hidden">
+            <div class="grid__header">
+              <div class="text price__header first-column--cell"
+                >Ремонтные услуги</div
+              >
+              <div class="text price__header header--price">Цена</div>
+              <div class="text price__header">Срок</div>
+              <div class="header--empty-cell"></div>
+            </div>
+            <div class="price--grid">
+              <div class="text cell service-cell first-column--cell"
+                >Диагностика</div
+              >
+              <div class="text cell price-cell">Бесплатно</div>
+              <div class="text cell deadline-cell">30-120 мин</div>
+              <button class="cell button button--order"></button>
+              <div class="text cell service-cell first-column--cell"
+                >Замена дисплея</div
+              >
+              <div class="text cell price-cell">1000</div>
+              <div class="text cell deadline-cell">30-120 мин</div>
+              <button class="cell button button--order"></button>
+              <div class="text cell service-cell first-column--cell"
+                >Замена полифонического динамика</div
+              >
+              <div class="text cell price-cell">1000</div>
+              <div class="text cell deadline-cell">30-120 мин</div>
+              <button class="cell button button--order"></button>
+              <div class="text cell service-cell first-column--cell"
+                >Тестирование с выдачей технического заключения</div
+              >
+              <div class="text cell price-cell">1000</div>
+              <div class="text cell deadline-cell">30-120 мин</div>
+              <button class="cell button button--order"></button>
+              <div
+                class="text cell service-cell first-column--cell last-row--cell"
+                >Замена программного обеспечения</div
+              >
+              <div class="text cell price-cell last-row--cell">1000</div>
+              <div class="text cell deadline-cell last-row--cell"
+                >30-120 мин</div
+              >
+              <button class="cell button button--order last-row--cell"></button>
+            </div>
           </div>
           <div class="price__specification">
             <p class="text specification-text">
