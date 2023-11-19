@@ -34,6 +34,7 @@ function formBth() {
         isOpen = false
         sidemenu.classList.remove('sidemenu--hide')
         classToggle(requestCall)
+        mainPage.classList.add('main-page--low-opacity')
       })
     })
     chatBtnSidemenu.addEventListener('click', () => {
@@ -45,6 +46,7 @@ function formBth() {
         isOpen = false
         sidemenu.classList.remove('sidemenu--hide')
         classToggle(feedback)
+        mainPage.classList.add('main-page--low-opacity')
       })
     })
   }

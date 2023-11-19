@@ -10,7 +10,10 @@ function btnBurgerOnClick() {
 
   function classToggle() {
     sidemenu.classList.toggle('sidemenu--hide')
-    mainPage.classList.toggle('main-page--low-opacity')
+    const sidemenuHide = document.querySelector('.sidemenu--hide')
+    if (!sidemenuHide) {
+      mainPage.classList.add('main-page--low-opacity')
+    } else mainPage.classList.remove('main-page--low-opacity')
   }
 
   sitePage.addEventListener('click', (evt) => {
