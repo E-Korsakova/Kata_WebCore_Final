@@ -26,7 +26,8 @@ function swiper() {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.3
+        slidesPerView: 1.3,
+        enabled: true
       },
       340: {
         slidesPerView: 1.4
@@ -65,7 +66,8 @@ function swiper() {
         slidesPerView: 2.7
       },
       750: {
-        slidesPerView: 2.9
+        slidesPerView: 2.9,
+        enabled: true
       },
       768: {
         enabled: false
@@ -82,7 +84,8 @@ function swiper() {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.3
+        slidesPerView: 1.3,
+        enabled: true
       },
       340: {
         slidesPerView: 1.4
@@ -121,7 +124,8 @@ function swiper() {
         slidesPerView: 2.7
       },
       750: {
-        slidesPerView: 2.9
+        slidesPerView: 2.9,
+        enabled: true
       },
       768: {
         enabled: false
@@ -138,7 +142,8 @@ function swiper() {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.2
+        slidesPerView: 1.2,
+        enabled: true
       },
       340: {
         slidesPerView: 1.3
