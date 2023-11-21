@@ -66,6 +66,9 @@ function swiper() {
       },
       750: {
         slidesPerView: 2.9
+      },
+      768: {
+        enabled: false
       }
     }
   })
@@ -119,6 +122,9 @@ function swiper() {
       },
       750: {
         slidesPerView: 2.9
+      },
+      768: {
+        enabled: false
       }
     }
   })
@@ -172,6 +178,9 @@ function swiper() {
       },
       750: {
         slidesPerView: 2.8
+      },
+      768: {
+        enabled: false
       }
     }
   })
