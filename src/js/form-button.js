@@ -63,6 +63,9 @@ function formBth() {
         mainPage.classList.remove('main-page--low-opacity')
       }
     }
+    if (currentwidth >= desktopSize) {
+      sidemenu.classList.toggle('sidemenu--low-opacity')
+    }
   }
 
   function callBthListener() {

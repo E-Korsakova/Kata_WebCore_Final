@@ -182,7 +182,8 @@ function swiper() {
         slidesPerView: 2.6
       },
       750: {
-        slidesPerView: 2.8
+        slidesPerView: 2.8,
+        enabled: true
       },
       768: {
         enabled: false
